@@ -25,8 +25,13 @@
 <!--  Directives
  -->
  <script src="js/directives/main-menu/menu.directives.js"></script>
-  <script src="js/directives/main-banner/mainBanner.directive.js"></script>
-   <script src="js/directives/my-slider/mySlider.directive.js"></script>
+ <script src="js/directives/main-banner/mainBanner.directive.js"></script>
+ <script src="js/directives/my-slider/mySlider.directive.js"></script>
+  <script src="js/directives/preview-panel/previewPanel.directive.js"></script>
+   <script src="js/directives/my-projects/myProject.directive.js"></script>
+
+
+
 
 
 
@@ -34,9 +39,13 @@
 </head>
 <body ng-app="myApp">
 <main-banner></main-banner>
-<!-- <div class="mainBanner">
-<main-menu></main-menu>	
-</div> -->
+<preview-panel></preview-panel>
+
+<div class="page">
+	<main class="cf" ng-view>
+	<!-- {{message}} -->
+	</main>
+</div>
 	
 </div>
 

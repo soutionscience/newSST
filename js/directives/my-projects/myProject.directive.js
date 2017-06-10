@@ -1,4 +1,4 @@
-app.directive('mainMenu', function(){
+app.directive('myProjects', function(){
 	// Runs during compile
 	return {
 		// name: '',
@@ -9,7 +9,7 @@ app.directive('mainMenu', function(){
 		// : 'ngModel', // Array = multiple requires, ? = optional, ^ = check parent elements
 		 restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
 		// template: '',
-		 templateUrl: 'js/directives/main-menu/mainMenu.html',
+		 templateUrl: 'js/directives/my-projects/myProjects.html',
 		// replace: true,
 		// transclude: true,
 		// compile: function(tElement, tAttrs, function transclude(function(scope, cloneLinkingFn){ return function linking(scope, elm, attrs){}})),
@@ -17,4 +17,4 @@ app.directive('mainMenu', function(){
 			
 		}
 	};
-}); 
+});

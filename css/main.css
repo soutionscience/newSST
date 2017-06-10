@@ -20,3 +20,19 @@
 .mainMenu span{color: white;}
 
 .slider{color: white; padding-top: 150px; padding-left: 250px;}
+
+.preview{background-color: #EEEEEE; width: 100%; border-top: white 4px solid;padding: 20px;}
+.preview span { padding-left: 8px; }
+
+.item-preview .story, .picture{ display: inline-block; }
+.item-preview .story{padding-left: 12px; }
+.item-preview .picture{  margin-top: 0px; float: left; }
+.item-preview .story h4{color: rgba(40, 91, 120, 1);}
+
+
+.homePage{ padding-top: 12px; }
+
+.homePage p{ text-align: justify; margin-top: 8px; }
+.homepage .partners{padding-left: 12px;}
+
+.gates .row .intro{ border-bottom: 1px grey solid; margin-bottom: 8px;}
