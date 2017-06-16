@@ -19,7 +19,12 @@
   .mainBanner{
 	background-image: url('/images/banner-mobile.jpg');
 }
+.preview {
+	display: none;
 }
+}
+
+
 /*.mainMenu{background-color: red;}*/
 .mainMenu .navbar-default{background-color: rgba(40, 91, 120, 0.3); width: 100%;}
 /*.mainMenu{ padding-top: 12px;}
