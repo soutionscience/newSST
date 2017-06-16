@@ -1,6 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width" />
+
 <!-- Latest compiled and minified CSS -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
@@ -9,12 +14,17 @@
 <link rel="stylesheet" type="text/css" href="css/slick/slick.css">
 <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css">
 
+
+
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <!-- libs -->
 <script src="js/angular.min.js"></script>
 <script src="js/angular-route.min.js"></script>
  <script type="text/javascript" src="js/includes/slick.min.js"></script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.4/angular-material.min.css"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.4/angular-material.min.js"></script>
 
 
 <script src="js/app.js"></script>
@@ -29,6 +39,12 @@
  <script src="js/directives/my-slider/mySlider.directive.js"></script>
   <script src="js/directives/preview-panel/previewPanel.directive.js"></script>
    <script src="js/directives/my-projects/myProject.directive.js"></script>
+   <script src="js/directives/my-footer/myFooter.directive.js"></script>
+   <script src="js/directives/get-quote/getQuote.directive.js"></script>
+    <script src="js/directives/bottom-menu/bottomMenu.directive.js"></script>
+
+
+
 
 
 
@@ -37,17 +53,21 @@
 
 	<title>SST</title>
 </head>
-<body ng-app="myApp">
+<main-menu></main-menu>	
+<body>
+
 <main-banner></main-banner>
-<preview-panel></preview-panel>
+
 
 <div class="page">
 	<main class="cf" ng-view>
 	<!-- {{message}} -->
 	</main>
 </div>
-	
-</div>
+<get-quote></get-quote>
+<preview-panel class="hidden-sm"></preview-panel>
+<bottom-menu></bottom-menu>
+<my-footer></my-footer>
 
 </body>
 </html>
