@@ -1,4 +1,4 @@
-app.config(function($stateProvider, $urlRouterProvider) {
+app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
 	$urlRouterProvider.otherwise('/');
 
@@ -35,4 +35,6 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		url:'/contact',
 		templateUrl:'views/content/contact-us.html'
 	})
+
+	$locationProvider.html5Mode(true);
 })
